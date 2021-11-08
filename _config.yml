@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: StudyKit
+title: 공책정리
 email: studykit.git@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   깜빡 졸지 않으려고 하는 공책정리
@@ -27,9 +27,9 @@ url: "https://studykit.github.io" # the base hostname & protocol for your site, 
 github_username:  studykit
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
   - jekyll-spaceship
 
 # https://github.com/jeffreytse/jekyll-spaceship
@@ -93,6 +93,21 @@ jekyll-spaceship:
     css:
       class: emoji
     src: https://github.githubassets.com/images/icons/emoji/
+
+# https://mmistakes.github.io/minimal-mistakes/docs/posts/
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "neon"
+
+defaults:
+  # posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      show_date: true
+      date_format: "%Y-%m-%d"
+      author_profile: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: single
 title:  "jekyll spaceship타고 설정블랙홀로"
-date:   2021-11-08 21:06:48 +0900
+date:   2021-11-09 03:06:48 +0900
 categories: jekyll
 ---
 
